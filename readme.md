@@ -1,11 +1,10 @@
 Dependencies
 ------------
 
-# ffmpeg
-* Download from website
-
-# Tesseract
-* winget install UB-Mannheim.TesseractOCR
+* ffmpeg
+  * Download from website
+* Tesseract
+  * winget install UB-Mannheim.TesseractOCR
 
 Captured video info
 --------------------
@@ -14,7 +13,7 @@ Captured video info
 Line to get captures from video
 -------------------------------
 ```bash
-ffmpeg -i in/Spacex_ift3.mp4 -ss 00:00:15 -vf "fps=2" -vf "crop=1900:200:0:1900" out/img%03d.jpg
+ffmpeg -i in/Spacex_ift4.mp4 -ss 00:00:15 -vf "fps=2" -vf "crop=1900:200:0:1900" out/img%03d.jpg
 ```
 
 OCR of the data
@@ -52,8 +51,8 @@ In this command:
 Feel free to adjust the `offset_x`, `offset_y`, and `video_size` values to capture the desired region of your screen. Let me know if you need any further assistance!
 
 
-Capture from X video
---------------------
+Capture from X streaming
+------------------------
 * Prepare environment
 set path=D:\Apps\ffmpeg\bin;%path% 
 set path=C:\Program Files\Tesseract-OCR;%path%  
@@ -62,7 +61,10 @@ set path=C:\Program Files\Tesseract-OCR;%path%
   - Put stream in full screen
   - run script
     
-    ffmpeg -f gdigrab -framerate 1 -offset_x 20 -offset_y 900 -video_size 1900x160 -i desktop -vf fps=1 test/output_%04d.png
+    ffmpeg -f gdigrab -framerate 1 -offset_x 20 -offset_y 900 -video_size 1900x160 -i desktop -vf fps=1 tmp/output_%04d.png
+
+Capture from recorded video
+---------------------------
 
 Steps
 -----
@@ -76,6 +78,12 @@ Steps
   ![altitude booster](img/altitude_4.png)
   ![speed SS](img/speed_ss_4.png)
   ![altitude SS](img/altitude_ss_4.png)
+
+
+Results IFT 4
+--------------
+Booster
+![booster](img/booster_ift4.png)
 
 Results IFT 5
 --------------
