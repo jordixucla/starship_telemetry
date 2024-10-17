@@ -54,17 +54,31 @@ Feel free to adjust the `offset_x`, `offset_y`, and `video_size` values to captu
 
 Capture from X video
 --------------------
-# Prepare environment
+* Prepare environment
 set path=D:\Apps\ffmpeg\bin;%path% 
 set path=C:\Program Files\Tesseract-OCR;%path%  
 
-# capture booster + starship + fligth time telemetry
-## Put stream in full screen
-## run script
-ffmpeg -f gdigrab -framerate 1 -offset_x 20 -offset_y 900 -video_size 1900x160 -i desktop -vf fps=1 test/output_%04d.png
+* capture booster + starship + fligth time telemetry
+  - Put stream in full screen
+  - run script
+    
+    ffmpeg -f gdigrab -framerate 1 -offset_x 20 -offset_y 900 -video_size 1900x160 -i desktop -vf fps=1 test/output_%04d.png
 
-Results
---------
+Steps
+-----
+* Capture the telemetry region each second
+![Telemetry](img/img012.jpg)
+
+* Adjust the script to extract the region for mission time, speeds and altitudes, and process with OCR
+  - Sample images:
+
+  ![speed booster](img/speed_4.png)
+  ![altitude booster](img/altitude_4.png)
+  ![speed SS](img/speed_ss_4.png)
+  ![altitude SS](img/altitude_ss_4.png)
+
+Results IFT 5
+--------------
 Booster
 ![booster](img/booster.png)
 
@@ -73,3 +87,4 @@ StarShip up
 
 StarShip down
 ![StarShip down](img/starship_down.png)
+

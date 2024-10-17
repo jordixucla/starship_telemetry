@@ -4,9 +4,9 @@ __pycache__/
 *$py.class
 
 # Temporary stuff
-in/
-out/
-test/
+videos/
+in_ift4/
+in_ift5/
 tmp/
 
 # backup things
