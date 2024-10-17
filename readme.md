@@ -85,6 +85,12 @@ Results IFT 4
 Booster
 ![booster](img/booster_ift4.png)
 
+StarShip up
+![StarShip up](img/starship_ift4_up.png)
+
+StarShip down
+![StarShip down](img/starship_ift4_down.png)
+
 Results IFT 5
 --------------
 Booster
