@@ -6,6 +6,12 @@ Dependencies
 * Tesseract
   * winget install UB-Mannheim.TesseractOCR
 
+References
+----------
+* IFT3 [1]: https://www.youtube.com/watch?v=9r5yupEUs4U&t=1752s
+* IFT4: video captured from X stream
+* IFT5: telemetry captured directly from X stream
+
 Captured video info
 --------------------
  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 10376 kb/s, 30 fps, 60 tbr, 30k tbn (default)
@@ -79,6 +85,13 @@ Steps
   ![speed SS](img/speed_ss_4.png)
   ![altitude SS](img/altitude_ss_4.png)
 
+Results IFT 3
+--------------
+Booster
+![booster](img/booster_ift3.png)
+
+StarShip
+![booster](img/starship_ift3.png)
 
 Results IFT 4
 --------------
