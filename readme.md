@@ -60,8 +60,8 @@ Feel free to adjust the `offset_x`, `offset_y`, and `video_size` values to captu
 Capture from X streaming
 ------------------------
 * Prepare environment
-set path=D:\Apps\ffmpeg\bin;%path% 
-set path=C:\Program Files\Tesseract-OCR;%path%  
+  - set path=D:\Apps\ffmpeg\bin;%path% 
+  - set path=C:\Program Files\Tesseract-OCR;%path%  
 
 * capture booster + starship + fligth time telemetry
   - Put stream in full screen
