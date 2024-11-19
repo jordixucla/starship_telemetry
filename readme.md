@@ -16,7 +16,7 @@ Captured video info
 --------------------
  Stream #0:0[0x1](und): Video: h264 (Main) (avc1 / 0x31637661), yuv420p(progressive), 1920x1080 [SAR 1:1 DAR 16:9], 10376 kb/s, 30 fps, 60 tbr, 30k tbn (default)
 
-Line to get captures from video
+Command line to capture telemetry blocks from video
 -------------------------------
 ```bash
 ffmpeg -i in/Spacex_ift4.mp4 -ss 00:00:15 -vf "fps=2" -vf "crop=1900:200:0:1900" out/img%03d.jpg
@@ -60,8 +60,8 @@ Feel free to adjust the `offset_x`, `offset_y`, and `video_size` values to captu
 Capture from X streaming
 ------------------------
 * Prepare environment
-set path=D:\Apps\ffmpeg\bin;%path% 
-set path=C:\Program Files\Tesseract-OCR;%path%  
+  - set path=D:\Apps\ffmpeg\bin;%path% 
+  - set path=C:\Program Files\Tesseract-OCR;%path%  
 
 * capture booster + starship + fligth time telemetry
   - Put stream in full screen
