@@ -5,9 +5,7 @@ __pycache__/
 
 # Temporary stuff
 videos/
-in_ift3/
-in_ift4/
-in_ift5/
+in_ift*/
 tmp/
 
 # backup things
@@ -186,3 +184,4 @@ cython_debug/
 
 # PEP 582; used by e.g. github.com/David-OConnor/pyflow
 __pypackages__/
+sx.7z
