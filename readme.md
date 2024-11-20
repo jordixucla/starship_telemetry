@@ -60,8 +60,10 @@ Feel free to adjust the `offset_x`, `offset_y`, and `video_size` values to captu
 Capture from X streaming
 ------------------------
 * Prepare environment
-  - set path=D:\Apps\ffmpeg\bin;%path% 
-  - set path=C:\Program Files\Tesseract-OCR;%path%  
+```
+  set path=D:\Apps\ffmpeg\bin;%path% 
+  set path=C:\Program Files\Tesseract-OCR;%path%  
+```
 
 * capture booster + starship + fligth time telemetry
   - Put stream in full screen
@@ -71,6 +73,12 @@ Capture from X streaming
 
 Capture from recorded video
 ---------------------------
+
+Setup a webserver for testing
+-----------------------------
+1. npm install -g http-server
+2. cd to the home root
+3. http-server.cmd
 
 Steps
 -----
@@ -115,3 +123,6 @@ StarShip up
 StarShip down
 ![StarShip down](img/starship_down.png)
 
+Results IFT 6
+--------------
+![booster](img/IFT_6_graphics.png)
