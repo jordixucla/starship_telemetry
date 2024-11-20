@@ -69,7 +69,7 @@ Capture from X streaming
   - Put stream in full screen
   - run script
     
-    ffmpeg -f gdigrab -framerate 1 -offset_x 20 -offset_y 900 -video_size 1900x160 -i desktop -vf fps=1 tmp/output_%04d.png
+    ffmpeg -f gdigrab -framerate 1 -offset_x 20 -offset_y 900 -video_size 1900x160 -i desktop -vf fps=10 tmp/output_%04d.png
 
 Capture from recorded video
 ---------------------------
@@ -126,3 +126,7 @@ StarShip down
 Results IFT 6
 --------------
 ![booster](img/IFT_6_graphics.png)
+
+Encendido del motor entre 0:37:40 y 0:37:45
+
+![Raptor](img/encendido%20motor.png)
