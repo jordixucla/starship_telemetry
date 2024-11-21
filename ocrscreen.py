@@ -14,10 +14,10 @@ def extract_region_from_image(image, bbox):
 # screenshot = ImageGrab.grab(bbox=(340, 900, 500, 950))  # Adjust the bbox as needed
 
 # screenshot = ImageGrab.grab(bbox=(340, 900, 500, 950))  # Adjust the bbox as needed
-ift_mission=6
+ift_mission="6_encendido"
 save_data=True
-for i in range(20, 3962):
-    # image_path = f"in_ift3/img{i:03d}.jpg"
+for i in range(403, 458):
+    # image_path = f"in_ift{ift_mission}/output_{i:04d}.png"
     image_path = f"in_ift{ift_mission}/output_{i:04d}.png"
     image = get_image_from_png_file(image_path)
 
